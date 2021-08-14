@@ -26,7 +26,7 @@ var config = {
     //footer: 'August 2021.',
     chapters: [
         {
-            id: 'slide-0',
+            id: 'drive-slide-a',
             alignment: 'center',
             hidden: false,
             title: 'Ascolta l\'audio mentre scorri verso il basso fermandoti sui punti che raggiungerà la linea.',
