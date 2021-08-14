@@ -1,4 +1,4 @@
-var driveSlides = 15;
+var driveSlides = 20;
 
 // Number of points on drive route (more = higher quality, but slower to process)
 var driveSmoothness = 100;
