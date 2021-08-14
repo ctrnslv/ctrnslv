@@ -1,4 +1,4 @@
-var driveSlides = 7;
+var driveSlides = 9;
 
 // Number of points on drive route (more = higher quality, but slower to process)
 var driveSmoothness = 200;
@@ -15,15 +15,15 @@ var followBearing = -0.16;
 var followPitch = 45;
 
 var config = {
-    style: 'mapbox://styles/ctrnslv/ckria6f6s5ema17nhpcra8rss',
+    style: 'mapbox://styles/ctrnslv/ckrt5wpw02h2x18mn0a2896hc',
     accessToken: 'pk.eyJ1IjoiY3RybnNsdiIsImEiOiJja3Jpd2tkeHgzN3pyMnVwOGpjcHJ1ODhoIn0.JucVmRdpKDMRmSbHVA9wtg',
     showMarkers: false,
     theme: 'dark',
     use3dTerrain: false,
-    title: 'SENTINELLE',
-    subtitle: 'In viaggio tra le tappe dell\'inchiesta',
-    byline: 'By Anna Berti Suman',
-    footer: 'August 2021.',
+    //title: 'SENTINELLE',
+    //subtitle: 'In viaggio tra le tappe dell\'inchiesta',
+    //byline: 'By Anna Berti Suman',
+    //footer: 'August 2021.',
     chapters: [
         {
             id: 'slide-0',
@@ -82,9 +82,9 @@ var config = {
       description: 'Nello zaino, lo stretto indispensabile e un ispirazione, il libro di Alliegro Totem Nero',
       location: {
           //center: [16.74949, 41.04042],
-          zoom: 13.34,
-          pitch: 45,
-          bearing: -0.78
+          //zoom: 13.34,
+          //pitch: 45,
+          //bearing: -0.78
       },
       //mapAnimation: 'flyTo',
       rotateAnimation: true,

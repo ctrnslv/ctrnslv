@@ -319,7 +319,7 @@ map.on("load", function() {
       "source": "lineSource",
       'paint': {
             'line-opacity': 1,
-            'line-color': '#452d57',
+            'line-color': '#8a1617',
             'line-width': 3.5
        },
        'layout': {
@@ -334,7 +334,7 @@ map.on("load", function() {
       'paint': {
             'circle-radius': 5,
             'circle-opacity': 1,
-            'circle-color': '#452d57'
+            'circle-color': '#8a1617'
       },
       'layout': {
            // 'visibility': 'none'
@@ -385,22 +385,44 @@ map.on('load', function () {
                     'type': 'Feature',
                     'properties': {
                         'description':
-                            '<strong>Bari</strong><p>Cominicia l\' inchiesta, diretta verso le terre lucane, con lentezza....</p>'
+                            '<strong>Laveno</strong><p>       </p>'
                     },
                     'geometry': {
                         'type': 'Point',
-                        'coordinates': [ 16.87187, 41.11715]
+                        'coordinates': [8.60790, 45.90990]
                     }
                 },
                 {
                     'type': 'Feature',
                     'properties': {
                         'description':
-                            '<strong>Bitetto</strong><p>Nello zaino, lo stretto indispensabile e un\' ispirazione, il libro di Alliegro \"Totem Nero\".\(Citazione dal libro\)</p>'
+                            '<strong>Roma</strong><p></p>'
                     },
                     'geometry': {
                         'type': 'Point',
-                        'coordinates': [16.74949, 41.04042]
+                        'coordinates': [12.54523, 41.89866]
+                    }
+                },
+                {
+                    'type': 'Feature',
+                    'properties': {
+                        'description':
+                            "<strong>Bari</strong><p>Cominicia l\'inchiesta, diretta verso le terre lucane, con lentezza....</p><br><br><img src="Cammino.jpg">
+                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [16.55705, 40.390581]
+                    }
+                },
+                {
+                    'type': 'Feature',
+                    'properties': {
+                        'description':
+                            '<strong>Bitetto</strong><p>aaaaaaaaa</p>'
+                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [16.55705, 40.390581]
                     }
                 },
                 {
@@ -451,7 +473,7 @@ map.on('load', function () {
                     'type': 'Feature',
                     'properties': {
                         'description':
-                            '<strong>Pisticci-dirupo</strong><p>Incontro Nico, insegnante a scuola e sentinella, che mi racconta delle battaglie del Movimento Tutela Val Basento.\(video Nico\)</p>'
+                            '<strong>Pisticci</strong><p>Incontro Nico, insegnante a scuola e sentinella, che mi racconta delle battaglie del Movimento Tutela Val Basento.\(video Nico\)</p>'
                     },
                     'geometry': {
                         'type': 'Point',
@@ -462,7 +484,7 @@ map.on('load', function () {
                     'type': 'Feature',
                     'properties': {
                         'description':
-                            "<strong>Pisticci-studio legale</strong><p>Intervisto l\'Avvocato Di Pisa, che difende le parti civili nel processo Petrolgate.\(video Di Pisa\)</p>"
+                            "<strong>Bari</strong><p>Intervisto l\'Avvocato Di Pisa, che difende le parti civili nel processo Petrolgate.\(video Di Pisa\)</p>"
                     },
                     'geometry': {
                         'type': 'Point',
@@ -473,7 +495,7 @@ map.on('load', function () {
                     'type': 'Feature',
                     'properties': {
                         'description':
-                            '<strong>Pisticci-chiesa</strong><p>Mi presento alla comunità di Pisticci nella loro Chiesa e ascolto le loro voci e denunce.\(podcast e foto\)</p>'
+                            '<strong>Bitetto</strong><p>Mi presento alla comunità di Pisticci nella loro Chiesa e ascolto le loro voci e denunce.\(podcast e foto\)</p>'
                     },
                     'geometry': {
                         'type': 'Point',
@@ -618,7 +640,7 @@ map.on('load', function () {
 
 $(document).ready(function (){
     $.ajax({
-      url:"./data/7-punti.geojson",
+      url:"./data/punti.geojson",
       // url:"./data/parkstroll.geojson",
       dataType: "json",
       success: function (data) {
