@@ -1,4 +1,4 @@
-var driveSlides = 10;
+var driveSlides = 6;
 
 // Number of points on drive route (more = higher quality, but slower to process)
 var driveSmoothness = 200;
@@ -26,7 +26,7 @@ var config = {
     //footer: 'August 2021.',
     chapters: [
         {
-            id: '-slide-a',
+            id: 'slide-a',
             alignment: 'center',
             hidden: false,
             title: 'Ascolta l\'audio mentre scorri verso il basso fermandoti sui punti che raggiungerà la linea.',
@@ -136,7 +136,7 @@ var config = {
               hidden: false,
               title: 'Altamura',
               //image: 'https://lh3.googleusercontent.com/proxy/ftw_SpSYfI1kbOigFYgOtB5khwscLh-aDp_e6lrmNjQiOshyl6vFKrNxuBVsktYgqerp36Sa1LjpVxr43BJ9wqGc-2BxuHC5AiPdpL2IybHJQ9laTx8zocNHbjZBd2iWuN84cqwjAeMquAU4tGd55JX40OKoh17J5H5F',
-              description: '<img src="Rifiuti.jpeg"><br><br>Stridenti contrasti tra un cammino curato e ben segnato, e cumuli di rifiuti che marciscono accanto agli ulivi mi fanno presagire il sapore dell\'inchiesta',
+              description: '<img src="Rifiuti.jpg"><br><br>Stridenti contrasti tra un cammino curato e ben segnato, e cumuli di rifiuti che marciscono accanto agli ulivi mi fanno presagire il sapore dell\'inchiesta',
               location: {
                   // center: [16.75535, 40.79241],
                   // zoom: 13.34,
@@ -155,7 +155,7 @@ var config = {
                   hidden: false,
                   title: 'Gravina di Puglia',
                   //image: 'https://lh3.googleusercontent.com/proxy/ftw_SpSYfI1kbOigFYgOtB5khwscLh-aDp_e6lrmNjQiOshyl6vFKrNxuBVsktYgqerp36Sa1LjpVxr43BJ9wqGc-2BxuHC5AiPdpL2IybHJQ9laTx8zocNHbjZBd2iWuN84cqwjAeMquAU4tGd55JX40OKoh17J5H5F',
-                  description: '<img src="sentinella13-0.jpeg"><br><br>Incontro Mimmo, sentinella lucana che mi accompagnerà nel percorso dell\'inchiesta.',
+                  description: '<img src="sentinella13-0.jpg"><br><br>Incontro Mimmo, sentinella lucana che mi accompagnerà nel percorso dell\'inchiesta.',
                   location: {
                       // center: [16.42194, 40.81895],
                       // zoom: 13.34,
