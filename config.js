@@ -1,4 +1,4 @@
-var driveSlides = 8;
+var driveSlides = 9;
 
 // Number of points on drive route (more = higher quality, but slower to process)
 var driveSmoothness = 100;
@@ -10,7 +10,7 @@ var driveTime = driveSlides*driveSmoothness;
 var followPoint = true;
 
 // ...If so, what zoom, pitch, and bearing should be used to follow?
-var followZoomLevel = 9;
+var followZoomLevel = 11;
 var followBearing = -0.16;
 var followPitch = 0;
 
@@ -26,8 +26,8 @@ var config = {
     //footer: 'August 2021.',
     chapters: [
         {
-            id: 'drive-slide-a',
-            alignment: 'center',
+            id: '-slide-a',
+            alignment: 'left',
             hidden: false,
             title: 'Ascolta l\'audio mentre scorri verso il basso fermandoti sui punti che raggiungerà la linea.',
             description: '<audio controls> <source src="mix_10m11s.mp3" type="audio/mpeg"></audio>',
@@ -57,10 +57,10 @@ var config = {
       {
             id: 'drive-slide-0',
             alignment: 'centered',
-            hidden: false,
+            hidden: left,
             title: 'Bari',
             //image: 'https://lh3.googleusercontent.com/proxy/ftw_SpSYfI1kbOigFYgOtB5khwscLh-aDp_e6lrmNjQiOshyl6vFKrNxuBVsktYgqerp36Sa1LjpVxr43BJ9wqGc-2BxuHC5AiPdpL2IybHJQ9laTx8zocNHbjZBd2iWuN84cqwjAeMquAU4tGd55JX40OKoh17J5H5F',
-          description: ' <img src="Cammino.jpg"><br><br>Cominicia l\'inchiesta, diretta verso le terre lucane, con lentezza...',
+          description: '<img src="Cammino.jpg"><br><br>Cominicia l\'inchiesta, diretta verso le terre lucane, con lentezza...',
             location: {
                 // //center: [16.86650, 41.12933],
                 // zoom: 11.29,
@@ -75,7 +75,7 @@ var config = {
         },
 {
       id: 'drive-slide-1',
-      alignment: 'center',
+      alignment: 'left',
       hidden: false,
       title: 'Bitetto',
       //image: 'https://lh3.googleusercontent.com/proxy/ftw_SpSYfI1kbOigFYgOtB5khwscLh-aDp_e6lrmNjQiOshyl6vFKrNxuBVsktYgqerp36Sa1LjpVxr43BJ9wqGc-2BxuHC5AiPdpL2IybHJQ9laTx8zocNHbjZBd2iWuN84cqwjAeMquAU4tGd55JX40OKoh17J5H5F',
@@ -94,7 +94,7 @@ var config = {
 },
 {
       id: 'drive-slide-2',
-      alignment: 'center',
+      alignment: 'left',
       hidden: false,
       title: 'Cassano delle Murge',
       //image: 'https://lh3.googleusercontent.com/proxy/ftw_SpSYfI1kbOigFYgOtB5khwscLh-aDp_e6lrmNjQiOshyl6vFKrNxuBVsktYgqerp36Sa1LjpVxr43BJ9wqGc-2BxuHC5AiPdpL2IybHJQ9laTx8zocNHbjZBd2iWuN84cqwjAeMquAU4tGd55JX40OKoh17J5H5F',
@@ -113,7 +113,7 @@ var config = {
     },
     {
           id: 'drive-slide-3',
-          alignment: 'center',
+          alignment: 'left',
           hidden: false,
           title: 'Santeramo in Colle',
           //image: 'https://lh3.googleusercontent.com/proxy/ftw_SpSYfI1kbOigFYgOtB5khwscLh-aDp_e6lrmNjQiOshyl6vFKrNxuBVsktYgqerp36Sa1LjpVxr43BJ9wqGc-2BxuHC5AiPdpL2IybHJQ9laTx8zocNHbjZBd2iWuN84cqwjAeMquAU4tGd55JX40OKoh17J5H5F',
@@ -132,11 +132,11 @@ var config = {
         },
         {
               id: 'drive-slide-4',
-              alignment: 'center',
+              alignment: 'left',
               hidden: false,
               title: 'Altamura',
               //image: 'https://lh3.googleusercontent.com/proxy/ftw_SpSYfI1kbOigFYgOtB5khwscLh-aDp_e6lrmNjQiOshyl6vFKrNxuBVsktYgqerp36Sa1LjpVxr43BJ9wqGc-2BxuHC5AiPdpL2IybHJQ9laTx8zocNHbjZBd2iWuN84cqwjAeMquAU4tGd55JX40OKoh17J5H5F',
-              description: '<img src="Rifiuti.jpg"><br><br>Stridenti contrasti tra un cammino curato e ben segnato, e cumuli di rifiuti che marciscono accanto agli ulivi mi fanno presagire il sapore dell\'inchiesta',
+              description: '<img src="Rifiuti.jpeg"><br><br>Stridenti contrasti tra un cammino curato e ben segnato, e cumuli di rifiuti che marciscono accanto agli ulivi mi fanno presagire il sapore dell\'inchiesta',
               location: {
                   // center: [16.75535, 40.79241],
                   // zoom: 13.34,
@@ -151,11 +151,11 @@ var config = {
             },
             {
                   id: 'drive-slide-5',
-                  alignment: 'center',
+                  alignment: 'left',
                   hidden: false,
                   title: 'Gravina di Puglia',
                   //image: 'https://lh3.googleusercontent.com/proxy/ftw_SpSYfI1kbOigFYgOtB5khwscLh-aDp_e6lrmNjQiOshyl6vFKrNxuBVsktYgqerp36Sa1LjpVxr43BJ9wqGc-2BxuHC5AiPdpL2IybHJQ9laTx8zocNHbjZBd2iWuN84cqwjAeMquAU4tGd55JX40OKoh17J5H5F',
-                  description: '<img src="sentinella13-0.jpg"><br><br>Incontro Mimmo, sentinella lucana che mi accompagnerà nel percorso dell\'inchiesta.',
+                  description: '<img src="sentinella13-0.jpeg"><br><br>Incontro Mimmo, sentinella lucana che mi accompagnerà nel percorso dell\'inchiesta.',
                   location: {
                       // center: [16.42194, 40.81895],
                       // zoom: 13.34,
@@ -170,7 +170,7 @@ var config = {
                 },
                 {
                       id: 'drive-slide-6',
-                      alignment: 'center',
+                      alignment: 'left',
                       hidden: false,
                       title: 'Pisticci',
                       //image: 'https://lh3.googleusercontent.com/proxy/ftw_SpSYfI1kbOigFYgOtB5khwscLh-aDp_e6lrmNjQiOshyl6vFKrNxuBVsktYgqerp36Sa1LjpVxr43BJ9wqGc-2BxuHC5AiPdpL2IybHJQ9laTx8zocNHbjZBd2iWuN84cqwjAeMquAU4tGd55JX40OKoh17J5H5F',
@@ -186,7 +186,7 @@ var config = {
                       callback: '',
                       onChapterEnter: [],
                       onChapterExit: []
-                  
+
 
                                                                                           }
                                                                                         ]
