@@ -1,7 +1,7 @@
-var driveSlides = 9;
+var driveSlides = 10;
 
 // Number of points on drive route (more = higher quality, but slower to process)
-var driveSmoothness = 100;
+var driveSmoothness = 200;
 
 // Value used to drive
 var driveTime = driveSlides*driveSmoothness;
@@ -11,7 +11,7 @@ var followPoint = true;
 
 // ...If so, what zoom, pitch, and bearing should be used to follow?
 var followZoomLevel = 11;
-var followBearing = -0.16;
+var followBearing = 0;
 var followPitch = 0;
 
 var config = {
@@ -27,7 +27,7 @@ var config = {
     chapters: [
         {
             id: '-slide-a',
-            alignment: 'left',
+            alignment: 'center',
             hidden: false,
             title: 'Ascolta l\'audio mentre scorri verso il basso fermandoti sui punti che raggiungerà la linea.',
             description: '<audio controls> <source src="mix_10m11s.mp3" type="audio/mpeg"></audio>',
