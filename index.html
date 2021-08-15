@@ -77,6 +77,7 @@
         .dark {
             color: #fcfcff;
             background-color: #111212;
+            opacity: 0.5;
         }
         .step {
             padding-bottom: 50vh;
@@ -385,28 +386,6 @@ map.on('load', function () {
                     'type': 'Feature',
                     'properties': {
                         'description':
-                            '<strong>Laveno</strong>'
-                    },
-                    'geometry': {
-                        'type': 'Point',
-                        'coordinates': [8.60790, 45.90990]
-                    }
-                },
-                {
-                    'type': 'Feature',
-                    'properties': {
-                        'description':
-                            '<strong>Roma</strong>'
-                    },
-                    'geometry': {
-                        'type': 'Point',
-                        'coordinates': [12.54523, 41.89866]
-                    }
-                },
-                {
-                    'type': 'Feature',
-                    'properties': {
-                        'description':
                             '<strong>Bari</strong><p>Cominicia l\'inchiesta, diretta verso le terre lucane, con lentezza....</p><br><br><img src="Cammino.jpg">'
                     },
                     'geometry': {
@@ -498,8 +477,8 @@ map.on('load', function () {
 
     // Create a popup, but don't add it to the map yet.
     var popup = new mapboxgl.Popup({
-        closeButton: false,
-        closeOnClick: false
+        closeButton: true,
+        closeOnClick: true
     });
 
     map.on('mouseenter', 'places', function (e) {
@@ -530,7 +509,7 @@ map.on('load', function () {
 
 $(document).ready(function (){
     $.ajax({
-      url:"./data/9-punti.geojson",
+      url:"./data/7-punti-ok.geojson",
       // url:"./data/parkstroll.geojson",
       dataType: "json",
       success: function (data) {
