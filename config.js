@@ -56,8 +56,8 @@ var config = {
         },
       {
             id: 'drive-slide-0',
-            alignment: 'centered',
-            hidden: left,
+            alignment: 'left',
+            hidden: false,
             title: 'Bari',
             //image: 'https://lh3.googleusercontent.com/proxy/ftw_SpSYfI1kbOigFYgOtB5khwscLh-aDp_e6lrmNjQiOshyl6vFKrNxuBVsktYgqerp36Sa1LjpVxr43BJ9wqGc-2BxuHC5AiPdpL2IybHJQ9laTx8zocNHbjZBd2iWuN84cqwjAeMquAU4tGd55JX40OKoh17J5H5F',
           description: '<img src="Cammino.jpg"><br><br>Cominicia l\'inchiesta, diretta verso le terre lucane, con lentezza...',
