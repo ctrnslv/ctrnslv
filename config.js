@@ -54,6 +54,35 @@ var config = {
                 // }
             ]
         },
+        {
+        id: 'slide-b',
+        alignment: 'center',
+        hidden: true,
+        title: 'Ascolta l\'audio e scorri la mappa cliccando sui punti che incontra la linea per seguire il mio cammino lento verso le tappe dell\'inchiesta.',
+        description: '',
+        location: {
+          center: [8.61185, 45.91026],
+          zoom: 10,
+          pitch: 45,
+          bearing: -0.16
+        },
+        mapAnimation: 'flyTo',
+        rotateAnimation: false,
+        callback: '',
+        onChapterEnter: [
+            // {
+            //     layer: 'layer-name',
+            //     opacity: 1,
+            //     duration: 5000
+            // }
+            ],
+        onChapterExit: [
+            // {
+            //     layer: 'layer-name',
+            //     opacity: 0
+            // }
+        ]
+    },
       {
             id: 'drive-slide-0',
             alignment: 'right',
